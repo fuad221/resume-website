@@ -9,7 +9,10 @@ const About = () => {
                         <strong>ABOUT ME</strong>
                     </h6>
                     <p className="grey-text">
-                        aaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
+                  earum doloribus dicta quod architecto, praesentium totam
+                  molestiae similique culpa repellat blanditiis nam facilis eius
+                  quaerat distinctio vitae, tenetur beatae repellendus?
                     </p>
                 </div>
                 <div className="card-action">
