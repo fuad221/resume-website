@@ -1,7 +1,7 @@
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize.min.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Navbar, Home, Skills, Experiences, Educations, Portfolios} from './reference-import'
+import { Navbar, Home, About, Skills, Experiences, Educations, Portfolios} from './reference-import'
 
 
 
@@ -11,11 +11,12 @@ function App() {
       <>
       <Navbar />
         <Routes>
-        <Route exact path="/" component={Home} />
-          <Route path="/skills" component={Skills} />
-          <Route path="/experiences" component={Experiences} />
-          <Route path="/educations" component={Educations} />
-          <Route path="/portfolios" component={Portfolios} />
+        <Route exact path="/" element={<Home />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="about" element={<About />} />
+          <Route path="experiences" element={<Experiences />} />
+          <Route path="educations" element={<Educations />} />
+          <Route path="portfolios" element={<Portfolios />} />
         </Routes>
       </>
     </Router>
@@ -23,3 +24,4 @@ function App() {
 }
 
 export default App;
+

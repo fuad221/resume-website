@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom'
+// import { HashLink as Link } from 'react-router-hash-link';
 
 
 const Navbar = () => {
@@ -11,34 +12,27 @@ const Navbar = () => {
                         <Link to='/' className='brand-logo'>
                             My Resume
                         </Link>
-                        <Link to='/' data-target='side-nav' className='sidenav-trigger'>
+                        <Link to='/' data-target='side-nav' className='sidenav-trigger '>
                             <i className='material-icons'>menu</i>
                         </Link>
                         <ul className='right hide-on-med-and-down'>
                             <li>
-                                <Link to='/'>
-                                    <i class='fas fa-home'></i> Home
-                                </Link>
+                                <Link to='/'>               Home            </Link>
                             </li>
                             <li>
-                                <Link to='/skills'>
-                                    <i class='fas fa-copy'></i> Skills
-                                </Link>
+                                <Link to='/about'>          About           </Link>
                             </li>
                             <li>
-                                <Link to='/experiences'>
-                                    <i class='fas fa-id-badge'></i> Experiences
-                                </Link>
+                                <Link to='/skills'>         Skills          </Link>
                             </li>
                             <li>
-                                <Link to='/educations'>
-                                    <i class='fas fa-graduation-cap'></i> Educations
-                                </Link>
+                                <Link to='/experiences'>    Experiences     </Link>
                             </li>
                             <li>
-                                <Link to='/portfolios'>
-                                    <i class='fas fa-address-card'></i> Portfolios
-                                </Link>
+                                <Link to='/educations'>     Educations      </Link>
+                            </li>
+                            <li>
+                                <Link to='/portfolios'>     Portfolios       </Link>
                             </li>
                         </ul>
                     </div>
@@ -46,29 +40,22 @@ const Navbar = () => {
             </nav>
             <ul className='sidenav' id='side-nav'>
                 <li>
-                    <Link to='/'>
-                        <i class='fas fa-home'></i> Home
-                    </Link>
+                    <Link to='/'>               Home            </Link>
                 </li>
                 <li>
-                    <Link to='/skills'>
-                        <i class='fas fa-copy'></i> Skills
-                    </Link>
+                    <Link to='/about'>          About           </Link>
                 </li>
                 <li>
-                    <Link to='/experiences'>
-                        <i class='fas fa-id-badge'></i> Experiences
-                    </Link>
+                    <Link to='/skills'>         Skills          </Link>
                 </li>
                 <li>
-                    <Link to='/educations'>
-                        <i class='fas fa-graduation-cap'></i> Educations
-                    </Link>
+                    <Link to='/experiences'>    Experiences     </Link>
                 </li>
                 <li>
-                    <Link to='/portfolios'>
-                        <i class='fas fa-address-card'></i> Portfolios
-                    </Link>
+                    <Link to='/educations'>     Educations      </Link>
+                </li>
+                <li>
+                    <Link to='/portfolios'>     Portfolios      </Link>
                 </li>
             </ul>
         </>

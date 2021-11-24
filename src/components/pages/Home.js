@@ -1,11 +1,10 @@
-import React, { Component }  from 'react'
-import {Navbar, Profile, About, Skills, Experiences, Educations, Portfolios} from '../../reference-import'
+import React from 'react'
+import { Profile,  Skills, Experiences, Educations, Portfolios} from '../../reference-import'
+import About from './About'
 
-export default class Home extends Component {
-	render() {
+const Home = () => {
 		return (
 			<section>
-				{/* <Navbar /> */}
 				<div className='container'>
 					<div className='row'>
 						<div className='col s12 m3'>
@@ -22,6 +21,6 @@ export default class Home extends Component {
 				</div>
 			</section>
 		);
-	}
 }
 
+export default Home
