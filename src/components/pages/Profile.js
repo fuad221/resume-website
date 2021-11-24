@@ -1,77 +1,36 @@
-import React from 'react'
+import React from 'react';
+import img from '../../image/img.jpg';
 
-const Profile = () => {
-    return (
-        <div>
-            <div className="card">
-                <div className="card-content">
-                    <h6>
-                        <strong>PROFESSIONAL SKILLS</strong>
-                    </h6>
-                    <div className="row mt-top">
-                        <div className="col s6">
-                            <p>HTML</p>
-                            <div className="progress grey lighten-1">
-                                <div
-                                    className="determinate blue"
-                                    style={{ width: '89%' }}
-                                ></div>
-                            </div>
-                        </div>
-                        <div className="col s6">
-                            <p>CSS</p>
-                            <div className="progress grey lighten-1">
-                                <div
-                                    className="determinate blue"
-                                    style={{ width: '100%' }}
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col s6">
-                            <p>JAVASCRIPT</p>
-                            <div className="progress grey lighten-1">
-                                <div
-                                    className="determinate blue"
-                                    style={{ width: '90%' }}
-                                ></div>
-                            </div>
-                        </div>
-                        <div className="col s6">
-                            <p>React</p>
-                            <div className="progress grey lighten-1">
-                                <div
-                                    className="determinate blue"
-                                    style={{ width: '95%' }}
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col s6">
-                            <p>MySQL</p>
-                            <div className="progress grey lighten-1">
-                                <div
-                                    className="determinate blue"
-                                    style={{ width: '90%' }}
-                                ></div>
-                            </div>
-                        </div>
-                        <div className="col s6">
-                            <p>mongo db</p>
-                            <div className="progress grey lighten-1">
-                                <div
-                                    className="determinate blue"
-                                    style={{ width: '70%' }}
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+export default function Profile() {
+	return (
+		<div>
+			<div className='card'>
+				<div className='card-image'>
+					<img className='activator' src={img}  alt="" />
+					<div className='btn-floating halfway-fab waves-effect waves-light red'>
+						<i className='material-icons activator'>more_vert</i>
+					</div>
+				</div>
+				<div className='card-content'>
+					<span className='card-title activator grey-text text-darken-4'>
+						React Developer
+					</span>
+					<p>Full Stack Web Developer</p>
+				</div>
+				<div className='card-reveal'>
+					<span className='card-title grey-text text-darken-4'>
+						Follow Me
+						<i className='material-icons right'>close</i>
+					</span>
+					<p className='flex-container'>
+						<i className='fab fa-facebook-f grey-text text-darken-4 social_style'></i>
+						<i className='fab fa-twitter grey-text text-darken-4 social_style'></i>
+						<i className='fab fa-google-plus-g grey-text text-darken-4 social_style'></i>
+						<i className='fab fa-instagram grey-text text-darken-4 social_style'></i>
+						<i className='fab fa-pinterest grey-text text-darken-4 social_style'></i>
+					</p>
+				</div>
+			</div>
+		</div>
+	);
 }
-
-export default Profile
