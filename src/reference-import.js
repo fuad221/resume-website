@@ -6,3 +6,4 @@ export { default as Profile } from './components/pages/Profile';
 export { default as Portfolios } from './components/pages/Portfolios';
 export { default as Skills } from './components/pages/Skills';
 export { default as Navbar } from './components/navbar/Navbar';
+export { default as AppCss } from './App.css';
