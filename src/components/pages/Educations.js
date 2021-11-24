@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
 
@@ -61,6 +61,6 @@ const Educations = () => {
 			</div>
         </div>
     )
-}
+};
 
 export default Educations

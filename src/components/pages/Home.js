@@ -1,6 +1,5 @@
 import React from 'react'
-import { Profile,  Skills, Experiences, Educations, Portfolios} from '../../reference-import'
-import About from './About'
+import { About, Profile,  Skills, Experiences, Educations, Portfolios} from '../../reference-import';
 
 const Home = () => {
 		return (
@@ -21,6 +20,6 @@ const Home = () => {
 				</div>
 			</section>
 		);
-}
+};
 
 export default Home
